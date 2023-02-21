@@ -1,6 +1,8 @@
 import React from 'react'
 import hero from '../assets/hero.jpg'
 import HomeList from '../components/HomeList'
+import HomeVideo from '../components/HomeVideo'
+import HomeConnect from '../components/HomeConnect'
 function Home() {
   return (
     <>
@@ -17,6 +19,8 @@ function Home() {
       </div>
     </div>
     <HomeList/>
+    <HomeVideo/>
+    <HomeConnect/>
     </>
   )
 }
