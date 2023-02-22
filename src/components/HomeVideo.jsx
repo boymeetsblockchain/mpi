@@ -3,17 +3,19 @@ import poster from '../assets/poster.png';
 
 function HomeVideo() {
   return (
-    <div className="flex flex-col md:flex-row md:justify-between mx-2 items-center h-100 bg-gray-100">
-      <div className="md:mr-4 video-info px-8 my-2 md:w-1/2">
-        <h1 className=' text-3xl md:text-5xl px-4 font-bold my-2'> What is MPI®?</h1>
-        <p className='md:text-xl text-sm '>The MPI® Premium Strategy brings the advantages of leveraged life insurance to everyday Americans, helping people from all walks of life achieve the financial freedom they desire and deserve.</p>
-        <button className='bg-yellow-500 text-black block px-12 text-center py-2 rounded-md md:w-auto md:mx-0 my-3 mx-2 md:mx-0'>
-          Learn More
-        </button>
+    <div className="lg:flex p-6 items-center space-y-5 bg-gray-100">
+      <div className="video-info my-2 lg:max-w-[35%] xl:max-w-[40%] lg:space-y-4">
+        <h1 className=' text-3xl md:text-5xl px-4 font- text-center my-2'> What is MPI®?</h1>
+        <p className='text-md font-light '>The MPI® Premium Strategy brings the advantages of leveraged life insurance to everyday Americans, helping people from all walks of life achieve the financial freedom they desire and deserve.</p>
+        <div className='hidden md:flex justify-center'>
+          <button className='bg-yellow-500 text-black px-12 text-center py-2 rounded-md md:flex justify-center hidden'>
+            Learn More
+          </button>
+        </div>
       </div>
-      <div className="md:ml-4 video md:w-1/2">
+      <div className="md:ml-4 video">
         <video
-          className="h-200  md:w-3/4 lg:w-3/4 rounded-lg shadow-lg object-cover object-center"
+          className="rounded-lg shadow-lg object-cover object-center h-[500px] lg:h-[400px]"
           controls
           poster={poster}
         >
@@ -23,6 +25,11 @@ function HomeVideo() {
           />
           Your browser does not support the video tag.
         </video>
+      </div>
+      <div className='flex justify-center lg:hidden'>
+        <button className='bg-yellow-500 text-black block px-12 text-center py-2 rounded-md'>
+          Learn More
+        </button>
       </div>
     </div>
   );
