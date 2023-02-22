@@ -1,5 +1,6 @@
 import 'typeface-poppins';
 import Navbar from './components/Navbar/Navbar';
+import Footer from './components/Footer';
 import Home from './pages/Home';
 import { BrowserRouter,Routes,Route } from 'react-router-dom';
 function App() {
@@ -9,6 +10,7 @@ function App() {
       <Routes>
         <Route  path='/' element={<Home/>}/>
       </Routes>
+      <Footer/>
     </BrowserRouter>
   )
 }
