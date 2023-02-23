@@ -3,6 +3,7 @@ import hero from '../assets/hero.jpg'
 import HomeList from '../components/HomeList'
 import HomeVideo from '../components/HomeVideo'
 import HomeConnect from '../components/HomeConnect'
+import Testimonial from '../components/Testimonial'
 function Home() {
   return (
     <>
@@ -21,6 +22,7 @@ function Home() {
     <HomeList/>
     <HomeVideo/>
     <HomeConnect/>
+    <Testimonial/>
     </>
   )
 }
