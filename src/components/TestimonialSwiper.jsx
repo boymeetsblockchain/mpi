@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useEffect, useState } from "react";
 import SwiperCore, { Navigation, Pagination, Autoplay } from "swiper";
 import { Swiper, SwiperSlide } from "swiper/react";
 import YouTube from "react-youtube";
@@ -25,6 +25,17 @@ const videoIds = [
 ];
 
 const Carousel = () => {
+  const [width, setWidth] = useState(window.innerWidth);
+
+  const updateWidth = () => {
+    setWidth(window.innerWidth);
+  };
+
+  useEffect(() => {
+    window.addEventListener('resize', updateWidth);
+    return () => window.removeEventListener('resize', updateWidth);
+  }, []);
+
   const opts = {
     height: "200",
     width: "400",
@@ -34,26 +45,28 @@ const Carousel = () => {
   };
 
   return (
-    <div className="bg-gray-200 p-4 rounded-md">
-      <Swiper
-        spaceBetween={20}
-        slidesPerView={3}
-        navigation
-        pagination={{ clickable: true }}
-        autoplay={{ delay: 3000 }}
-        loop
-        className="mySwiper"
-        breakpoints={{
+    <div className="mx-auto max-w-[500px] p-8 md:max-w-[1000px] lg:max-w-[1400px]">
+      <div className="bg-gray-200 p-4 pt-10 md:p-20 md:mt-8 rounded-2xl">
+        <Swiper
+          spaceBetween={20}
+          slidesPerView={`${width < 1000 && 1 || width >= 1000 && width < 1300 && 2 || width >= 1300 && 3}`}
+          navigation
+          pagination={{ clickable: true }}
+          autoplay={{ delay: 3000 }}
+          loop
+          className="mySwiper"
+          breakpoints={{
           }}
-      >
-        {videoIds.map((videoId) => (
-          <SwiperSlide key={videoId}>
-            <div className="h-[250px]">
-              <YouTube videoId={videoId} opts={opts} />
-            </div>
-          </SwiperSlide>
-        ))}
-      </Swiper>
+        >
+          {videoIds.map((videoId) => (
+            <SwiperSlide key={videoId} className="">
+              <div className="h-[250px] ">
+                <YouTube videoId={videoId} opts={opts} />
+              </div>
+            </SwiperSlide>
+          ))}
+        </Swiper>
+      </div>
     </div>
   );
 };
