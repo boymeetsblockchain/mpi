@@ -4,6 +4,7 @@ import HomeList from '../components/HomeList'
 import HomeVideo from '../components/HomeVideo'
 import HomeConnect from '../components/HomeConnect'
 import Testimonial from '../components/Testimonial'
+import GoogleReviews from '../components/GoogleReviews/GoogleReviews'
 function Home() {
   return (
     <>
@@ -23,6 +24,7 @@ function Home() {
     <HomeVideo/>
     <HomeConnect/>
     <Testimonial/>
+    <GoogleReviews/>
     </>
   )
 }

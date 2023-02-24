@@ -9,7 +9,7 @@ function NavLinks() {
             name: 'About',
             submenu: true,
             sublink: [
-                { name: 'Meet MPI Unlimited' },
+                { name: 'Meet MPI Unlimited',link:'/meetmpiunlimited' },
                 { name: 'meet the founders' },
             ],
         },
@@ -58,7 +58,8 @@ function NavLinks() {
                                 <div className='' onClick={() => link.submenu = false}>
                                     {link.sublink.map((mysublinks) => (
                                         <div className='bg-gray-100 hover:bg-gray-200 text-center flex flex-col px-3' key={mysublinks.name}>
-                                            <h1 className='text-sm hover:text-yellow-500 my-2.5' on>{mysublinks.name}</h1>
+                                            <h1 className='text-sm hover:text-yellow-500 my-2.5' on><a href={mysublinks.link}>{mysublinks.name}</a></h1>
+                                            
                                             <hr />
                                         </div>
                                     ))}
