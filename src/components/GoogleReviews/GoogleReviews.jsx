@@ -20,7 +20,7 @@ function GoogleReviews() {
 
   // reviewData.map(item => console.log(item.fullName))
   return (
-    <div className='py-10 md:px-10 px-6'>
+    <div className='py-10 px-4 md:px-10 px-6'>
       <div className='flex flex-col items-center md:flex-row'>
         <div className=' flex-shrink-0 w-[150px] md:w-[200px]'>
           <img src={googlereview} alt="googlereview"/>
@@ -38,9 +38,9 @@ function GoogleReviews() {
             }}
           >
             {reviewData.map((review) => (
-             <div className='flex justify-center p-10'>
+             <div className='flex justify-center items-center mx-auto p-10'>
                 <SwiperSlide key={review.fullName} >
-                  <div className="flex justify-center items-center bg-inherit py-12 max-w-[400px] px-4">
+                  <div className="flex justify-center items-center bg-inherit py-12 mr-60 w-[400px] px-4">
                     <div className='rounded-2xl shadow-2xl px-4 lg:px-6 py-10 space-y-7'>
                       <div className="flex items-center space-x-5">
                         <img src={review.image} alt="googlereview" className='w-[50px] rounded-full' />

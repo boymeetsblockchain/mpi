@@ -8,7 +8,7 @@ function Testimonial() {
        <div className="testimonial-slider">
        <TestimonialSwiper/>
        </div>
-       <div className="button flex items-center justify-around px-3">
+       <div className="button flex items-center flex-col md:flex-row lg:justify-around px-3">
        <button className='bg-yellow-500 text-black block px-12 text-center py-2 rounded-md md:w-auto my-3 md:mx-0'>
           Learn More
         </button>
