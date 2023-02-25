@@ -9,7 +9,7 @@ function Founder() {
         </div>
 
         <div className='mx-auto max-w-5xl'>
-          <h1 className='text-center text-4xl my-4'>Meet The Founder: </h1>
+          <h1 className='text-center text-4xl opacity-75 my-4'>Meet The Founder: </h1>
           <div className='lg:flex mt-10 border-2 rounded-2xl'>
             <div className='space-y-6 p-10 lg:w-[35%] flex-shrink-0'>
               <img src={rayfamily} alt="founder" />

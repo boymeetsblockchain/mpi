@@ -4,6 +4,7 @@ import Footer from './components/Footer';
 import Home from './pages/Home';
 import Meet from './pages/Meet'
 import Founder from './pages/Founder'
+import Intro from './pages/Intro';
 import { BrowserRouter,Routes,Route } from 'react-router-dom';
 function App() {
   return (
@@ -13,6 +14,7 @@ function App() {
         <Route  path='/' element={<Home/>}/>
         <Route  path='/meetmpiunlimited' element={<Meet/>}/>
         <Route  path='/meetthefounder' element={<Founder/>}/>
+        <Route  path='/introtompi' element={<Intro/>}/>
       </Routes>
       <Footer/>
     </BrowserRouter>

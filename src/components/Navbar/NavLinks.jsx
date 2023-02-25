@@ -17,7 +17,7 @@ function NavLinks() {
             name: 'What is MPI?',
             submenu: true,
             sublink: [
-                { name: ' Intro to MPI' },
+                { name: ' Intro to MPI',link:'/introtompi' },
                 { name: 'MPI Video Series' },
                 { name: 'MPI Books' },
             ],
