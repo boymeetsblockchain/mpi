@@ -4,7 +4,7 @@ function Intro() {
   return (
     <div>
          <div className="connect flex justify-center items-center  bg-cover  bg-center md:bg-center md:bg-cover h-3/4 md:h-3/4"style={{ backgroundImage: `url(${connect})`,height:'200px' }}>
-           <div className="meet-div text-2xl  bg-yellow-500 absolute opacity-90 text-center md:right-10 w-[300px] py-10 px-5 rounded-lg">
+           <div className="meet-div text-2xl hidden  md:block bg-yellow-500 absolute opacity-90 text-center md:right-10 w-[300px] py-10 px-5 rounded-lg">
            An Introduction to MPI® PremiumStrategies
            </div>
        </div>
