@@ -1,8 +1,8 @@
 import React from 'react'
-import hero from '../assets/hero.jpg'
-import premium from "../assets/premium.png"
-import speaker from "../assets/speak.png"
-import testimonial from "../assets/testimonials.png"
+import hero from '../../assets/hero.jpg'
+import premium from "../../assets/premium.png"
+import speaker from "../../assets/speak.png"
+import testimonial from "../../assets/testimonials.png"
 
 function HomeList() {
   return (

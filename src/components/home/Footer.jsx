@@ -1,4 +1,4 @@
-import logo from '../assets/logo.png';
+// import logo from '../../assets/logo.png';
 import { FaTwitter, FaTiktok, FaInstagram, FaFacebook, FaYoutube, FaPinterest } from 'react-icons/fa';
 
 function Footer() {
@@ -27,7 +27,7 @@ function Footer() {
       </div>
       <div className="logo-info bg-black text-white flex flex-col justify-between px-2 items-center font-bold text-center">
         <div className="img">
-          <img src={logo} className="h-24 my-4" alt="" />
+          {/* <img src={logo} className="h-24 my-4" alt="" /> */}
         </div>
         <p className="my-3 text-xl">
           Copyright © 2023

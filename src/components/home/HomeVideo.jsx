@@ -1,5 +1,5 @@
-import HomeMp4 from '../assets/Home-Page-Video-2.0.mp4';
-import poster from '../assets/poster.png';
+import HomeMp4 from '../../assets/Home-Page-Video-2.0.mp4';
+import poster from '../../assets/poster.png';
 
 function HomeVideo() {
   return (

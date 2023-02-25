@@ -2,8 +2,10 @@ import logo from '../../assets/logo.png'
 // import{AiOutlineMenu} from 'react-icons/ai'
 import { Link } from 'react-router-dom'
 import NavLinks from './NavLinks'
-import ContactUs from '../ContactUs'
+import ContactUs from '../home/ContactUs'
 import { useState } from 'react'
+
+
 function Navbar() {
      const [open ,setOpen] = useState(false)
   return (

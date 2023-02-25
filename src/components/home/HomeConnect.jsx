@@ -1,4 +1,4 @@
-import Homeconnect from'../assets/connect.png'
+import Homeconnect from'../../assets/connect.png'
 
 import React from 'react'
 function HomeConnect() {

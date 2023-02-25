@@ -1,9 +1,9 @@
 import React from 'react'
 import hero from '../assets/hero.jpg'
-import HomeList from '../components/HomeList'
-import HomeVideo from '../components/HomeVideo'
-import HomeConnect from '../components/HomeConnect'
-import Testimonial from '../components/Testimonial'
+import HomeList from '../components/home/HomeList'
+import HomeVideo from '../components/home/HomeVideo'
+import HomeConnect from '../components/home/HomeConnect'
+import Testimonial from '../components/home/Testimonial'
 import GoogleReviews from '../components/GoogleReviews/GoogleReviews'
 function Home() {
   return (

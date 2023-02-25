@@ -1,4 +1,5 @@
 import React, { useEffect, useState } from 'react'
+import { Link } from 'react-router-dom';
 
 function NavLinks() {
     const [clickedLink, setClickedLink] = useState(null);
@@ -10,7 +11,7 @@ function NavLinks() {
             submenu: true,
             sublink: [
                 { name: 'Meet MPI Unlimited',link:'/meetmpiunlimited' },
-                { name: 'meet the founders' },
+                { name: 'meet the founders', link: '/founders' },
             ],
         },
         {
@@ -72,10 +73,12 @@ function NavLinks() {
                     {clickedLink === link.name && link.submenu && (
                         <div className="bg-white p-3.5">
                             {link.sublink.map((mysublinks) => (
-                                <div className="bg-gray-100 hover:bg-gray-200 text-center flex flex-col px-3 cursor-pointer" key={mysublinks.name}>
-                                    <h1 className="text-sm hover:text-yellow-500 my-2.5">{mysublinks.name}</h1>
-                                    <hr />
-                                </div>
+                                <Link to={mysublinks.link}>
+                                    <div className="bg-gray-100 hover:bg-gray-200 text-center flex flex-col px-3 cursor-pointer" key={mysublinks.name}>
+                                        <h1 className="text-sm hover:text-yellow-500 my-2.5">{mysublinks.name}</h1>
+                                        <hr />
+                                    </div>
+                                </Link>
                             ))}
                         </div>
                     )}
