@@ -5,6 +5,7 @@ import Home from './pages/Home';
 import Meet from './pages/Meet'
 import Founder from './pages/Founder'
 import Intro from './pages/Intro';
+import MpiBook from './pages/MpiBook';
 import { BrowserRouter,Routes,Route } from 'react-router-dom';
 function App() {
   return (
@@ -15,6 +16,7 @@ function App() {
         <Route  path='/meetmpiunlimited' element={<Meet/>}/>
         <Route  path='/meetthefounder' element={<Founder/>}/>
         <Route  path='/introtompi' element={<Intro/>}/>
+        <Route  path='/mpibook' element={<MpiBook/>}/>
       </Routes>
       <Footer/>
     </BrowserRouter>

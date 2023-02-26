@@ -19,7 +19,7 @@ function NavLinks() {
             sublink: [
                 { name: ' Intro to MPI',link:'/introtompi' },
                 { name: 'MPI Video Series' },
-                { name: 'MPI Books' },
+                { name: 'MPI Books',link:'/mpibook' },
             ],
         },
         {
