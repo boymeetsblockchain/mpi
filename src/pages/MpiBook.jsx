@@ -86,9 +86,10 @@ function MpiBook() {
           <p>believe I will be using the MPI system to ensure my future family and I are protected so we can become</p>
           <p>truly financially free.</p>
          </div>
-         <a href=""  className="bg-yellow-500 border border-black text-black md:text-3xl block px-12 my-4 text-center py-2 rounded-md">
+         <a href="https://www.everyoneendsuppoor.com/optin1657665059833"  className="bg-yellow-500 border border-black text-black md:text-3xl block px-12 my-4 text-center py-2 rounded-md">
           <span className='block'>YES! I Want My FREE Copy</span>
           <span className='block'> EVERYONE ENDS UP POOR</span>
+    
          </a>
         </div>
     
