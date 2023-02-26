@@ -18,6 +18,7 @@ function NavLinks() {
             submenu: true,
             sublink: [
                 { name: ' Intro to MPI' },
+                { name: ' MPI Calculator', link: '/mpicalculator' },
                 { name: 'MPI Video Series' },
                 { name: 'MPI Books' },
             ],
