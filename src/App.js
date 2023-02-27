@@ -7,6 +7,8 @@ import Founder from './pages/Founder'
 import Intro from './pages/Intro';
 import MpiBook from './pages/MpiBook';
 import { BrowserRouter,Routes,Route } from 'react-router-dom';
+import MbiCalculator from './components/MbiCalculate';
+
 function App() {
   return (
     <BrowserRouter>
@@ -16,6 +18,7 @@ function App() {
         <Route  path='/meetmpiunlimited' element={<Meet/>}/>
         <Route  path='/meetthefounder' element={<Founder/>}/>
         <Route  path='/introtompi' element={<Intro/>}/>
+        <Route path='/mpicalculator' element={<MbiCalculator />} />
         <Route  path='/mpibook' element={<MpiBook/>}/>
       </Routes>
       <Footer/>
