@@ -46,7 +46,7 @@ const Carousel = () => {
 
   return (
     <div className="mx-auto max-w-[500px] p-8 md:max-w-[1000px] lg:max-w-[1400px]">
-      <div className="bg-gray-200 p-4 pt-10 md:p-20 md:mt-8 rounded-2xl">
+      <div className=" p-4 pt-10 md:p-20 md:mt-8 rounded-2xl">
         <Swiper
           spaceBetween={20}
           slidesPerView={`${width < 1000 && 1 || width >= 1000 && width < 1300 && 2 || width >= 1300 && 3}`}
