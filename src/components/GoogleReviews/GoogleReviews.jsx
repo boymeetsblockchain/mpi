@@ -20,15 +20,12 @@ function GoogleReviews() {
 
   // reviewData.map(item => console.log(item.fullName))
   return (
-    <div className='py-10 px-4 md:px-10 px-6'>
+    <div className='mx-auto'>
       <div className='flex flex-col items-center md:flex-row'>
-        <div className=' flex-shrink-0 w-[150px] md:w-[200px]'>
-          <img src={googlereview} alt="googlereview"/>
-        </div>
-        <div className='flex-1 flex w-inherit mx-auto max-w-[400px] md:max-w-[70%] md:mt-0 lg:max-w-[80%] p-6 space-x-4'>
+        <div className='flex gap-10 flex-1 items-center w-inherit mx-auto max-w-[400px] md:max-w-[70%] md:mt-0 lg:max-w-[80%] p-6 space-x-6'>
           <Swiper
             spaceBetween={20}
-            slidesPerView={`${width < 1100 && 1 || width >= 1100 && width < 1300 && 2 || width >= 1300 && 3}`}
+            slidesPerView={`${width < 1200 && 1 || width >= 1100 && width < 1100 && 2 || width >= 1100 && 3}`}
             navigation
             pagination={{ clickable: true }}
             autoplay={{ delay: 3000 }}
@@ -38,21 +35,31 @@ function GoogleReviews() {
             }}
           >
             {reviewData.map((review) => (
-              <div>
-                <SwiperSlide key={review.fullName}>
-                  <div className="flex justify-center items-center bg-inherit py-12 w-inherit md:w-full px-4">
-                    <div className='rounded-2xl shadow-2xl px-4 lg:px-6 py-7 space-y-7'>
-                      <div className="flex items-center space-x-5">
-                        <img src={review.image} alt="googlereview" className='w-[50px] rounded-full' />
-                        <h1 className='font-serif font-semibold text-xl'>{review.fullName}</h1>
-                      </div>
+             <div className='flex justify-center  items-center mx-auto p-10'>
+                <SwiperSlide key={review.fullName} >
+                  <div className="flex justify-center items-center  py-12 mr-60 w-[350px] px-4">
+                    <div className='rounded-2xl shadow-2xl px-4 lg:px-6 py-10 space-y-7'>
+                      <div className="flex flex-col items-center space-x-5">
+                       <div className='flex'>
+                       <FaUserAlt className='h-6 mx-1 items-center' fill={'gray'}/>
+                      <h1 className=' text-sm'>{review.fullName}</h1>
+                       </div>
+                      <div className="flex">
+                         <FaStar fill="orange"/>
+                         <FaStar fill="orange"/>
+                         <FaStar fill="orange"/>
+                         <FaStar fill="orange"/>
+                         <FaStar fill="orange"/>
+                         <FaStar fill="orange"/>
+                        </div>
+                       </div>
                       <div>
-                        <p className='line-clamp-6'>{review.review}</p>
+                        <p className='line-clamp-6 text-[10px]'>{review.review}</p>
                       </div>
                     </div>
                   </div>
-                </ SwiperSlide>
-              </div>
+                </SwiperSlide>
+             </div>
             ))}
           </Swiper>
         </div>
