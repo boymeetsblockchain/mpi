@@ -8,6 +8,7 @@ import Intro from './pages/Intro';
 import MpiBook from './pages/MpiBook';
 import { BrowserRouter,Routes,Route } from 'react-router-dom';
 import MbiCalculator from './components/MbiCalculate';
+import ClientSupport from './pages/ClientSupport';
 
 function App() {
   return (
@@ -20,6 +21,7 @@ function App() {
         <Route  path='/introtompi' element={<Intro/>}/>
         <Route path='/mpicalculator' element={<MbiCalculator />} />
         <Route  path='/mpibook' element={<MpiBook/>}/>
+        <Route  path='/clientsupport' element={<ClientSupport/>}/>
       </Routes>
       <Footer/>
     </BrowserRouter>

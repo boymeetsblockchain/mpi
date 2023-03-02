@@ -3,6 +3,7 @@ import logo from '../../assets/logo.png'
 import { Link } from 'react-router-dom'
 import NavLinks from './NavLinks'
 import ContactUs from '../ContactUs'
+import ContactLinks from './ContactLinks'
 import { useState } from 'react'
 function Navbar() {
      const [open ,setOpen] = useState(false)
@@ -23,7 +24,7 @@ function Navbar() {
           <NavLinks/>
         </ul>
         <div className='md:block hidden'>
-        <ContactUs/>
+        <ContactLinks/>
       </div>
         {/* Mobile nav */}
         <ul
@@ -38,7 +39,7 @@ function Navbar() {
           </li>
           <NavLinks/>
           <div className="py-5">
-            <ContactUs/>
+            <ContactLinks/>
           </div>
         </ul>
       </div>
