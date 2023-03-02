@@ -9,6 +9,7 @@ import MpiBook from './pages/MpiBook';
 import { BrowserRouter,Routes,Route } from 'react-router-dom';
 import MbiCalculator from './components/MbiCalculate';
 import ClientSupport from './pages/ClientSupport';
+import MpiUnlimited from './pages/MpiUnlimited';
 
 function App() {
   return (
@@ -22,6 +23,7 @@ function App() {
         <Route path='/mpicalculator' element={<MbiCalculator />} />
         <Route  path='/mpibook' element={<MpiBook/>}/>
         <Route  path='/clientsupport' element={<ClientSupport/>}/>
+        <Route  path='/mpiunlimited' element={<MpiUnlimited/>}/>
       </Routes>
       <Footer/>
     </BrowserRouter>
