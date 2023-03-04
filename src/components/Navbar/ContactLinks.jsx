@@ -11,7 +11,7 @@ function NavLinks() {
             sublink: [
                 { name: 'Client Support', link:'/clientsupport' },
                 { name: 'Mpi Unlimited',link:'/mpiunlimited' },
-                { name: 'Careers',link:'/career' },
+                { name: 'Careers',link:'/careers' },
             ],
         },
         

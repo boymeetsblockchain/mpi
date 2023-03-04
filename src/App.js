@@ -10,6 +10,7 @@ import { BrowserRouter,Routes,Route } from 'react-router-dom';
 import MbiCalculator from './components/MbiCalculate';
 import ClientSupport from './pages/ClientSupport';
 import MpiUnlimited from './pages/MpiUnlimited';
+import Careers from './pages/Careers';
 
 function App() {
   return (
@@ -24,6 +25,7 @@ function App() {
         <Route  path='/mpibook' element={<MpiBook/>}/>
         <Route  path='/clientsupport' element={<ClientSupport/>}/>
         <Route  path='/mpiunlimited' element={<MpiUnlimited/>}/>
+        <Route  path='/careers' element={<Careers/>}/>
       </Routes>
       <Footer/>
     </BrowserRouter>
